@@ -1,19 +1,14 @@
-pip requirements
 fastapi
 uvicorn
-requests
 streamlit
-
 langchain
 langchain-community
-langchain-core
 langchain-ollama
 langgraph
-
 faiss-cpu
 ollama
-
 pydantic
-python-dotenv
+requests
 
+pytest
 flake8
