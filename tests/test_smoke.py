@@ -1,2 +1,3 @@
-def test_smoke():
+def test_backend_imports():
+    import backend.app
     assert True
