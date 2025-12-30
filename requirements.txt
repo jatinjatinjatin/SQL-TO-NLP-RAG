@@ -1,3 +1,4 @@
+pip requirements
 fastapi
 uvicorn
 streamlit
