@@ -3,12 +3,11 @@ uvicorn
 streamlit
 langchain
 langchain-community
+langchain-core
 langchain-ollama
-langgraph
 faiss-cpu
 ollama
-pydantic
 requests
-
+pydantic
 pytest
 flake8
