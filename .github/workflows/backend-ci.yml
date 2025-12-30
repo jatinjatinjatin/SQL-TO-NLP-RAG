@@ -4,11 +4,9 @@ on:
   push:
     paths:
       - "backend/**"
-      - "requirements.txt"
   pull_request:
     paths:
       - "backend/**"
-      - "requirements.txt"
 
 jobs:
   backend:
