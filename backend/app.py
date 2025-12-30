@@ -4,9 +4,10 @@ from backend.sql_engine import run_query_stream
 
 app = FastAPI(title="Pre-Council SQL Agent")
 
-@app.get("/")
+@app.get("/health")
 def health():
     return {"status": "ok"}
+
 
 @app.get("/query/stream")
 def query_stream(question: str = Query(...)):
