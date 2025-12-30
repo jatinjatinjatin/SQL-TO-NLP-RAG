@@ -2,24 +2,18 @@ name: Backend CI
 
 on:
   push:
-    paths:
-      - "backend/**"
-      - "requirements.txt"
+    branches: [main]
   pull_request:
-    paths:
-      - "backend/**"
-      - "requirements.txt"
+    branches: [main]
 
 jobs:
   backend:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
@@ -29,11 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Lint
-        run: |
-          pip install flake8
-          flake8 backend || true
+        run: flake8 backend
 
       - name: Run tests
-        run: |
-          pip install pytest
-          pytest backend || true
+        run: pytest
