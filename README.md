@@ -1,21 +1,16 @@
+🧠 NLP → SQL Agent with Schema RAG, Streaming & Evaluation
 
-PRE-COUNCIL NLP → SQL AGENT WITH GSAP + THREE.JS
+An end-to-end LLM-powered NLP-to-SQL system that converts natural language questions into executable SQL using schema-aware Retrieval-Augmented Generation (RAG), validates queries through execution, streams responses, and provides automatic evaluation with confidence scoring and dashboards.
 
-RUN STEPS:
+✨ Key Features
 
-1) pip install fastapi uvicorn streamlit langchain langchain-community langgraph faiss-cpu ollama
+🔤 Natural Language → SQL using LLMs (Ollama / LLaMA)
 
-2) ollama serve
-   ollama pull llama3
+🧩 Schema-Aware RAG to ground SQL generation in database structure
 
-3) python backend/db_setup.py
+⚙️ Automatic SQL Execution & Healing
 
-4) uvicorn backend.app:app --reload
+🔁 Streaming SQL & Results (real-time feedback)
 
-5) streamlit run frontend/app.py
-
-FEATURES:
-- Animated GSAP UI
-- Three.js Query DAG node
-- NLP → SQL with LangGraph
-- Self-healing SQL
+📊 Confidence Score per Answer
+...
