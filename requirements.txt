@@ -1,4 +1,3 @@
-pip requirements
 fastapi
 uvicorn
 streamlit
@@ -9,6 +8,8 @@ langgraph
 faiss-cpu
 ollama
 pydantic
+requests
+
+# dev / ci
 pytest
 flake8
-requests
